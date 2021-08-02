@@ -1,0 +1,183 @@
+baseURL = ""
+title = "Airspace | Creative Agency Hugo Template"
+theme = "airspace hugo"
+paginate = "4"
+summaryLength = "30"
+disableLanguages = [ ]
+disqusShortname = ""
+googleAnalytics = ""
+themesDir = "themes"
+publishDir = "public"
+
+[module.hugoVersion]
+extended = true
+min = "0.83.1"
+
+[outputs]
+home = [ "HTML" ]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 6
+ordered = false
+
+[params]
+logo = "images/logo.png"
+logo_width = "150px"
+description = "This is meta description"
+author = "Themefisher"
+image = "images/logo.png"
+
+  [params.widgets]
+  sidebar = [ "recent_posts", "taxonomy_category", "taxonomy_tags" ]
+
+  [params.contact]
+  phone = "0124857985320"
+  email = "demo@email.com"
+  location = """
+**Themefisher**  
+North Main Street  
+Brooklyn, New South Wales  
+Australia
+"""
+  address_descriptors = false
+
+    [params.contact.form]
+    enable = true
+    use_netlify = true
+    action = "#"
+    success_image = "images/paper-plane.svg"
+
+  [params.gmap]
+  enable = true
+  gmap_api = "AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
+  map_latitude = "51.5223477"
+  map_longitude = "-0.1622023"
+  map_marker = "images/marker.png"
+
+  [params.preloader]
+  enable = true
+  preloader = ""
+
+  [params.cookies]
+  enable = true
+  expire_days = 2
+
+  [params.counter]
+  enable = true
+  username = ""
+
+  [[params.social]]
+  icon = "ion-social-googleplus-outline"
+  link = "#"
+
+  [[params.social]]
+  icon = "ion-social-linkedin-outline"
+  link = "#"
+
+  [[params.social]]
+  icon = "ion-social-pinterest-outline"
+  link = "#"
+
+  [[params.social]]
+  icon = "ion-social-dribbble-outline"
+  link = "#"
+
+  [[params.social]]
+  icon = "ion-social-twitter-outline"
+  link = "#"
+
+  [[params.social]]
+  icon = "ion-social-facebook-outline"
+  link = "#"
+
+[[params.plugins.css]]
+link = "plugins/bootstrap/css/bootstrap.min.css"
+attributes = "media='screen'"
+
+[[params.plugins.css]]
+link = "plugins/ionicons/css/ionicons.min.css"
+attributes = ""
+
+[[params.plugins.css]]
+link = "plugins/magnific-popup/magnific-popup.min.css"
+attributes = ""
+
+[[params.plugins.css]]
+link = "plugins/slick/slick.css"
+attributes = ""
+
+[[params.plugins.js]]
+link = "plugins/jquery/jquery.min.js"
+attributes = ""
+
+[[params.plugins.js]]
+link = "plugins/bootstrap/js/bootstrap.min.js"
+attributes = ""
+
+[[params.plugins.js]]
+link = "plugins/slick/slick.min.js"
+attributes = ""
+
+[[params.plugins.js]]
+link = "plugins/magnific-popup/magnific-popup.min.js"
+attributes = ""
+
+[[params.plugins.js]]
+link = "plugins/shuffle/shuffle.min.js"
+attributes = ""
+
+[[params.plugins.js]]
+link = "plugins/google-map/gmap.js"
+attributes = "defer"
+
+[languages.en]
+languageName = "English"
+languageCode = "en-US"
+contentDir = "content/english"
+weight = 1
+copyright = "Copyright &copy; 2021 [Themefisher](https://themefisher.com). All Rights Reserved."
+
+[[languages.en.menu.main]]
+hasChildren = true
+name = "More"
+weight = 5
+
+[languages.fr]
+languageName = "Français"
+languageCode = "fr-FR"
+contentDir = "content/french"
+weight = 2
+copyright = "Copyright &copy; 2021 [Themefisher](https://themefisher.com). Tous droits réservés."
+
+[[languages.fr.menu.main]]
+hasChildren = true
+weight = 5
+name = "Plus"
+
+[languages.it]
+languageName = "Italiano"
+languageCode = "it-IT"
+contentDir = "content/italian"
+weight = 2
+copyright = "Copyright &copy; 2021 [Themefisher](https://themefisher.com). Tutti i diritti riservati."
+
+[[languages.it.menu.main]]
+hasChildren = true
+weight = 5
+name = "Più"
+
+[languages.de]
+languageName = "Deutsch"
+languageCode = "de-DE"
+contentDir = "content/german"
+weight = 3
+copyright = "Copyright &copy; 2021 [Themefisher](https://themefisher.com). Alle Rechte vorbehalten."
+
+[[languages.de.menu.main]]
+hasChildren = true
+name = "Mehr"
+weight = 5
